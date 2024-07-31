@@ -5,14 +5,10 @@ using System.IO;
 public class SceneManager : MonoBehaviour
 {
 	private string[] _sceneNames = new string[] { "SampleScene", "Shop" };
-	[SerializeField] private bool _loadSampleScene;
 
     private void Awake()
     {
 		Time.timeScale = 1.0f;
-
-		if (_loadSampleScene)
-			LoadSceneOfName(_sceneNames[0]);
 	}
 
 	public void LoadSceneOfName(string sceneName)
